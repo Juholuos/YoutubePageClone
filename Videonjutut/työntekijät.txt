@@ -1,0 +1,4 @@
+Markku = Rekkakuski
+Matias = Youtubettaja
+Esa = Opettaja
+Joni = Metallimies
