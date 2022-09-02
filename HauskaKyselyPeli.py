@@ -1,4 +1,6 @@
 from time import sleep
+from playsound import playsound
+playsound(r"C:\Users\D00m5\Downloads\musiikki.mp3", False)
 
 kuollut = False
 sleep(1)
@@ -45,4 +47,6 @@ def toinen():
         sleep(1)
         print("Oven takaa kuuluu ääniä.")
         sleep(1)
-        kysymys2 = input("(A) Odota hetki oven takana jos sieppaaja lähtisi muualle / (B) Ota viereinen metallitanko ja houkuttele sieppaaja luoksesi(B)")
+        kysymys2 = input("(A) Odota hetki oven takana jos sieppaaja lähtisi muualle / (B) Ota viereinen metallitanko aseeksi ja houkuttele sieppaaja luoksesi(B)")
+        if kysymys2 == "A": 
+                print("Sieppaaja lähtee ovesta ulos ja kuulet auton käynnistyvän")
