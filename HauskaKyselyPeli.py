@@ -26,17 +26,16 @@ def main():
                 sleep(1)
                 print("Nappaaja tulee ja viiltää sinulta kurkun auki.")
                 kuollut = True
-                def kuollut():
-                        kuollut = True
-                        if kuollut == True:
-                                print("Peli päättyi!")
-                                uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
-                                if uudelleen == "K":
-                                        print("Heräät varastosta.")
-                                        main()
-                                else:
-                                        print("Heippa")
-                                        quit()
+                if kuollut == True:
+                        print("Peli päättyi!")
+                        uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
+                        if uudelleen == "K":
+                                sleep(1)
+                                print("Heräät varastosta.")
+                                main()
+                        else:
+                                print("Heippa")
+                                quit()
         elif kysymys1 ==("B"):
                         print("Tutkiessasi huonetta huomaat, että nappaaja ei tyhjentänyt taskujasi ja löydät linkkuveitsen, jolla saat leikattua kätesi vapaiksi.\n")  
                         sleep(1)
@@ -62,6 +61,17 @@ def toinen():
         
         elif kysymys2 == "B":
                 print("Sieppaaja tulee huoneeseen, mutta et saa yllätettyä häntä, ja hän ampuu sinut.")
+                kuollut = True
+                if kuollut == True:
+                        print("Peli päättyi!")
+                        uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
+                        if uudelleen == "K":
+                                sleep(1)
+                                print("Heräät varastosta.")
+                                main()
+                        else:
+                                print("Heippa")
+                                quit()
                 sleep(1)
         
               
