@@ -3,7 +3,6 @@ from pygame import mixer
 mixer.init()
 mixer.music.load("musiikki.mp3")
 mixer.music.play()
-
 kuollut = False
 
 sleep(1)
@@ -63,7 +62,7 @@ def toinen():
         if kysymys2 == "A":
                 sleep(1)
                 print("\n")
-                print("Sieppaaja lähtee ovesta ulos ja kuulet auton käynnistyvän \n")
+                print("Sieppaaja lähtee ovesta ulos ja kuulet auton käynnistyvän. \n")
                 sleep(3)
                 print("Hiivit toiseen huoneeseen ja saat selville, että sieppaaja on poliisin etsimä murhaaja.\n")
                 sleep(3)
@@ -101,7 +100,7 @@ def kolmas():
         sleep(5)
         print("\n")
         print("----------------------------------------------\n")
-        sleep(2)
+        sleep(1)
         print("Mietit nyt, kuinka saisit voitettua hänet \n")
         sleep(3)
         
@@ -109,7 +108,7 @@ def kolmas():
         print("\n")
         if kysymys3 == "A":
                 sleep(1)
-                print("Hänen astuessaan ovesta saat lyötyä häntä, mutta nappaaja ampuu sinut \n")
+                print("Hänen astuessaan ovesta saat lyötyä häntä, mutta nappaaja ampuu sinut. \n")
                 kuollut = True
                 if kuollut == True:
                         print("Peli päättyi!")
@@ -143,11 +142,11 @@ def kolmas():
                         print("\n")
                         print("Isket selkäsi takaa veitsen hänen kaulaansa ja nappaaja kaatuu maahan. \n")
                         sleep(4)
-                        print("Otat hänen taskuistaan avainnipun ja suuntaat ulos \n")
+                        print("Otat hänen taskuistaan avainnipun ja suuntaat ulos. \n")
                         sleep(4)
-                        print("Kesytät koiran antamalla sille herkkuja joita löysit eteisestä \n")
+                        print("Kesytät koiran antamalla sille herkkuja joita löysit eteisestä. \n")
                         sleep(4)
-                        print("Hyppäät autoon ja ajat poliisilaitokselle paljastamaan murhaajan \n")
+                        print("Hyppäät autoon ja ajat poliisilaitokselle paljastamaan murhaajan. \n")
                         sleep(4)
                         print("...\n")
                         sleep(3)
@@ -157,9 +156,11 @@ def kolmas():
                 sleep(4)
                 print("Kunnes jalkasi koskettavat kylmää tiililattiaa...\n")
                 sleep(3)
+                print("---------------------------------------------------")
+                sleep(1)
+                print("Kiitos pelaamisesta!\n") 
+                sleep(1) 
                 return mixer.fadeout
-                print("Kiitos pelaamisesta!")   
-kolmas()
 
       
         
