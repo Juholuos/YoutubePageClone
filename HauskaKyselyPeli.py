@@ -4,6 +4,8 @@ mixer.init()
 mixer.music.load("musiikki.mp3")
 mixer.music.play()
 kuolema = False
+
+#kuoleman funktio
 def kuollut():
         kuolema = True
         if kuolema == True:
@@ -20,22 +22,34 @@ def kuollut():
                 else:
                         print("Heippa")
                         quit()
-
-
-sleep(1)
-print("Kävelet illalla yksin tiellä..\n")
-sleep(2)
-print("Yhtäkkiä kuulet juoksuaskelia takaasi, ja ennenkuin kerkeät edes kääntymään..\n")
-sleep(3)
-print("Näkösi pimenee, ja seuraavana heräät pimeästä varastosta, kädet sidottuina.\n")
-sleep(3)
-print("Sinun tehtävänäsi on nyt päättää, mitä teet!\n")
-sleep(2)
-print("----------------------------------------------\n")
-sleep(1)
-def main():
-        print("Huomaat, että maassa on puukko. \n")
+#loppupuheen funktio
+def loppupuhe():
         sleep(1)
+        print("\n")
+        print("Isket selkäsi takaa veitsen hänen kaulaansa ja nappaaja kaatuu maahan. \n")
+        sleep(4)
+        print("Otat hänen taskuistaan avainnipun ja suuntaat ulos. \n")
+        sleep(4)
+        print("Kesytät koiran antamalla sille herkkuja joita löysit eteisestä. \n")
+        sleep(4)
+        print("Hyppäät autoon ja ajat poliisilaitokselle paljastamaan murhaajan. \n")
+        sleep(4)
+        print("...\n")
+        sleep(3)
+        print("Heräät hikisenä ja mietit olipas ahdistava uni. \n")
+        sleep(3)
+        print("...\n")
+        sleep(4)
+        print("Kunnes jalkasi koskettavat kylmää tiililattiaa...\n")
+        sleep(3)
+        print("---------------------------------------------------")
+        sleep(1)
+        print("Kiitos pelaamisesta!\n") 
+        sleep(1)
+
+
+#ensimmäisen kysymyksen nimeäminen                  
+def kysymyss1():
         kysymys1 = input("(A) Yritä kerätä se jaloilla / (B) Jatka huoneen tutkimista: ")
         if kysymys1 == ("A"):
                 print("\n")
@@ -54,19 +68,10 @@ def main():
         else:
                 print("Väärä vastaus, yritä uudelleen")
                 sleep(1)
-                main()
-
-main()
-###########################################################################################################################################################################################
-def toinen():
         
-        sleep(1)
-        print("Vapauduttuasi liikut varovasti oven luokse kuuntelemaan onko sieppaaja lähellä.\n")
-        sleep(3)
-        print("----------------------------------------------\n")
-        sleep(1)
-        print("Oven takaa kuuluu ääniä.\n")
-        sleep(2)
+
+#toisen kysymyksen nimeäminen
+def kysymyss2():
         kysymys2 = input("(A) Odota hetki oven takana jos sieppaaja lähtisi muualle / (B) Ota viereinen metallitanko aseeksi ja houkuttele sieppaaja luoksesi: ")
         if kysymys2 == "A":
                 sleep(1)
@@ -83,16 +88,83 @@ def toinen():
                 print("Sieppaaja tulee huoneeseen, mutta et saa yllätettyä häntä, ja hän ampuu sinut.")
                 sleep(1)
                 kuollut()
-               
-        
               
         else: 
                 print("Väärä vastaus, yritä uudelleen")
-                toinen()
+                kysymyss2()              
+#kolmannen kysymyksen nimeäminen
+def kysymyss3():
+        kysymys3 = input("(A) Ota puukko ja odota että hän palaa. / (B) Ota puukko ja mene takaisin huoneeseesi ja esitä että olet edelleen sidottu: ")
+        print("\n")
+        if kysymys3 == "A":
+                sleep(1)
+                print("Hänen astuessaan ovesta saat lyötyä häntä, mutta nappaaja ampuu sinut. \n")
+                kuollut()
+        elif kysymys3 == "B":
+                sleep(1)
+                print("Nappaaja palaa asuntoon ja tulee veitsen kanssa luoksesi. \n")
+                sleep(3)
+                print("Hän kuiskaa korvaasi tappavasi sinut \n")
+                sleep(3)
+                print("----------------------------------------------\n")
+                sleep(1)
+                kysymyss4()
+        else: 
+                print("Väärä vastaus, yritä uudelleen")
+                kysymyss3()   
+#neljännen kysymyksen nimeäminen
+def kysymyss4():
+        kysymys4 = input("Lyötkö häntä nyt? (A) Odota vielä / (B) Lyö: ")
+        if kysymys4 == "A":
+                sleep(1)
+                print("Yhtäkkiä hän iskee veitsellä sinua")
+                kuollut()
+        elif kysymys4 == "B":
+                loppupuhe()
+        else:
+                print("Väärä vastaus, yritä uudelleen")
+                kysymyss4()   
+#####################################################################################
+
+#aloituspuheen funktio
+def aloitus_puhe():
+        sleep(1)
+        print("Kävelet illalla yksin tiellä..\n")
+        sleep(2)
+        print("Yhtäkkiä kuulet juoksuaskelia takaasi, ja ennenkuin kerkeät edes kääntymään..\n")
+        sleep(3)
+        print("Näkösi pimenee, ja seuraavana heräät pimeästä varastosta, kädet sidottuina.\n")
+        sleep(3)
+        print("Sinun tehtävänäsi on nyt päättää, mitä teet!\n")
+        sleep(2)
+        print("----------------------------------------------\n")
+        sleep(1)
+aloitus_puhe()
+
+#kuolemasta paluu funktio
+def main():
+        print("Huomaat, että maassa on puukko. \n")
+        sleep(1)
+        kysymyss1()
+main()
 
 
+#toisen kohdan funktio
+def toinen():
+        
+        sleep(1)
+        print("Vapauduttuasi liikut varovasti oven luokse kuuntelemaan onko sieppaaja lähellä.\n")
+        sleep(3)
+        print("----------------------------------------------\n")
+        sleep(1)
+        print("Oven takaa kuuluu ääniä.\n")
+        sleep(2)
+        kysymyss2()
 toinen()
 
+
+
+#kolmannen kohdan funktio
 def kolmas():
         mixer.init
         print("Helpointa olisi lähteä ovesta ulos, mutta se on lukossa myös sisältäpäin. Näet myös että pihalla vartioi iso koira. \n")
@@ -104,50 +176,9 @@ def kolmas():
         sleep(1)
         print("Mietit nyt, kuinka saisit voitettua hänet \n")
         sleep(3)
-        
-        kysymys3 = input("(A) Ota puukko ja odota että hän palaa. / (B) Ota puukko ja mene takaisin huoneeseesi ja esitä että olet edelleen sidottu: ")
-        print("\n")
-        if kysymys3 == "A":
-                sleep(1)
-                print("Hänen astuessaan ovesta saat lyötyä häntä, mutta nappaaja ampuu sinut. \n")
-                kuolema()
-        elif kysymys3 == "B":
-                sleep(1)
-                print("Nappaaja palaa asuntoon ja tulee veitsen kanssa luoksesi. \n")
-                sleep(3)
-                print("Hän kuiskaa korvaasi tappavasi sinut \n")
-                sleep(3)
-                print("----------------------------------------------\n")
-                sleep(1)
-                kysymys4 = input("Lyötkö häntä nyt? (A) Odota vielä / (B) Lyö: ")
-                if kysymys4 == "A":
-                        sleep(1)
-                        print("Yhtäkkiä hän iskee veitsellä sinua")
-                        kuollut()
-                elif kysymys4 == "B":
-                        sleep(1)
-                        print("\n")
-                        print("Isket selkäsi takaa veitsen hänen kaulaansa ja nappaaja kaatuu maahan. \n")
-                        sleep(4)
-                        print("Otat hänen taskuistaan avainnipun ja suuntaat ulos. \n")
-                        sleep(4)
-                        print("Kesytät koiran antamalla sille herkkuja joita löysit eteisestä. \n")
-                        sleep(4)
-                        print("Hyppäät autoon ja ajat poliisilaitokselle paljastamaan murhaajan. \n")
-                        sleep(4)
-                        print("...\n")
-                        sleep(3)
-                print("Heräät hikisenä ja mietit olipas ahdistava uni. \n")
-                sleep(3)
-                print("...\n")
-                sleep(4)
-                print("Kunnes jalkasi koskettavat kylmää tiililattiaa...\n")
-                sleep(3)
-                print("---------------------------------------------------")
-                sleep(1)
-                print("Kiitos pelaamisesta!\n") 
-                sleep(1) 
-                return mixer.fadeout
+        kysymyss3()
+kolmas()
+
 
       
         
