@@ -16,7 +16,7 @@ def kuollut():
                         print("Heräät varastosta.\n")
                         mixer.music.rewind()
                         sleep(1)
-                        main()
+                        return main()
                 else:
                         print("Heippa")
                         quit()
@@ -79,19 +79,11 @@ def toinen():
                 sleep(3)
         
         elif kysymys2 == "B":
-                print("Sieppaaja tulee huoneeseen, mutta et saa yllätettyä häntä, ja hän ampuu sinut.")
-                kuolema = True
-                if kuolema == True:
-                        print("Peli päättyi!")
-                        uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
-                        if uudelleen == "K":
-                                sleep(1)
-                                print("Heräät varastosta.")
-                                main()
-                        else:
-                                print("Heippa")
-                                quit()
                 sleep(1)
+                print("Sieppaaja tulee huoneeseen, mutta et saa yllätettyä häntä, ja hän ampuu sinut.")
+                sleep(1)
+                kuollut()
+               
         
               
         else: 
@@ -118,14 +110,7 @@ def kolmas():
         if kysymys3 == "A":
                 sleep(1)
                 print("Hänen astuessaan ovesta saat lyötyä häntä, mutta nappaaja ampuu sinut. \n")
-                kuolema = True
-                if kuolema == True:
-                        print("Peli päättyi!")
-                uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
-                if uudelleen == "K":
-                        sleep(1)
-                        print("Heräät varastosta.")
-                        main()
+                kuolema()
         elif kysymys3 == "B":
                 sleep(1)
                 print("Nappaaja palaa asuntoon ja tulee veitsen kanssa luoksesi. \n")
@@ -138,14 +123,7 @@ def kolmas():
                 if kysymys4 == "A":
                         sleep(1)
                         print("Yhtäkkiä hän iskee veitsellä sinua")
-                        kuolema = True
-                        if kuolema == True:
-                                print("Peli päättyi!")
-                        uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
-                        if uudelleen == "K":
-                                sleep(1)
-                                print("Heräät varastosta.")
-                                main()
+                        kuollut()
                 elif kysymys4 == "B":
                         sleep(1)
                         print("\n")
