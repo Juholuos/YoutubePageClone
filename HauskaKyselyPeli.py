@@ -46,8 +46,7 @@ def loppupuhe():
         sleep(1)
         print("Kiitos pelaamisesta!\n") 
         sleep(1)
-
-
+############################################
 #ensimmäisen kysymyksen nimeäminen                  
 def kysymyss1():
         kysymys1 = input("(A) Yritä kerätä se jaloilla / (B) Jatka huoneen tutkimista: ")
@@ -67,9 +66,31 @@ def kysymyss1():
                 sleep(3)
         else:
                 print("Väärä vastaus, yritä uudelleen")
-                sleep(1)
-        
+                sleep(1)     
+#aloituspuheen funktio
+def aloitus_puhe():
+        sleep(1)
+        print("Kävelet illalla yksin tiellä..\n")
+        sleep(2)
+        print("Yhtäkkiä kuulet juoksuaskelia takaasi, ja ennenkuin kerkeät edes kääntymään..\n")
+        sleep(3)
+        print("Näkösi pimenee, ja seuraavana heräät pimeästä varastosta, kädet sidottuina.\n")
+        sleep(3)
+        print("Sinun tehtävänäsi on nyt päättää, mitä teet!\n")
+        sleep(2)
+        print("----------------------------------------------\n")
+        sleep(1)
+aloitus_puhe()
+###########################################
 
+#kuolemasta paluu funktio
+def main():
+        print("Huomaat, että maassa on puukko. \n")
+        sleep(1)
+        kysymyss1()
+main()
+
+#######################################
 #toisen kysymyksen nimeäminen
 def kysymyss2():
         kysymys2 = input("(A) Odota hetki oven takana jos sieppaaja lähtisi muualle / (B) Ota viereinen metallitanko aseeksi ja houkuttele sieppaaja luoksesi: ")
@@ -91,7 +112,24 @@ def kysymyss2():
               
         else: 
                 print("Väärä vastaus, yritä uudelleen")
-                kysymyss2()              
+                kysymyss2()        
+#toisen kohdan funktio
+def toinen():
+        
+        sleep(1)
+        print("Vapauduttuasi liikut varovasti oven luokse kuuntelemaan onko sieppaaja lähellä.\n")
+        sleep(3)
+        print("----------------------------------------------\n")
+        sleep(1)
+        print("Oven takaa kuuluu ääniä.\n")
+        sleep(2)
+        kysymyss2()
+toinen()
+########################################
+
+
+
+###################################
 #kolmannen kysymyksen nimeäminen
 def kysymyss3():
         kysymys3 = input("(A) Ota puukko ja odota että hän palaa. / (B) Ota puukko ja mene takaisin huoneeseesi ja esitä että olet edelleen sidottu: ")
@@ -111,7 +149,7 @@ def kysymyss3():
                 kysymyss4()
         else: 
                 print("Väärä vastaus, yritä uudelleen")
-                kysymyss3()   
+                kysymyss3()
 #neljännen kysymyksen nimeäminen
 def kysymyss4():
         kysymys4 = input("Lyötkö häntä nyt? (A) Odota vielä / (B) Lyö: ")
@@ -123,48 +161,8 @@ def kysymyss4():
                 loppupuhe()
         else:
                 print("Väärä vastaus, yritä uudelleen")
-                kysymyss4()   
-#####################################################################################
-
-#aloituspuheen funktio
-def aloitus_puhe():
-        sleep(1)
-        print("Kävelet illalla yksin tiellä..\n")
-        sleep(2)
-        print("Yhtäkkiä kuulet juoksuaskelia takaasi, ja ennenkuin kerkeät edes kääntymään..\n")
-        sleep(3)
-        print("Näkösi pimenee, ja seuraavana heräät pimeästä varastosta, kädet sidottuina.\n")
-        sleep(3)
-        print("Sinun tehtävänäsi on nyt päättää, mitä teet!\n")
-        sleep(2)
-        print("----------------------------------------------\n")
-        sleep(1)
-aloitus_puhe()
-
-#kuolemasta paluu funktio
-def main():
-        print("Huomaat, että maassa on puukko. \n")
-        sleep(1)
-        kysymyss1()
-main()
-
-
-#toisen kohdan funktio
-def toinen():
-        
-        sleep(1)
-        print("Vapauduttuasi liikut varovasti oven luokse kuuntelemaan onko sieppaaja lähellä.\n")
-        sleep(3)
-        print("----------------------------------------------\n")
-        sleep(1)
-        print("Oven takaa kuuluu ääniä.\n")
-        sleep(2)
-        kysymyss2()
-toinen()
-
-
-
-#kolmannen kohdan funktio
+                kysymyss4()  
+#kolmannen kohdan funktio (sis 3 ja 4 nimeämiset)
 def kolmas():
         mixer.init
         print("Helpointa olisi lähteä ovesta ulos, mutta se on lukossa myös sisältäpäin. Näet myös että pihalla vartioi iso koira. \n")
@@ -178,6 +176,7 @@ def kolmas():
         sleep(3)
         kysymyss3()
 kolmas()
+##################################
 
 
       
