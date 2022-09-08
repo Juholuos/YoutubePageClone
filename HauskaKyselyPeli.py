@@ -3,7 +3,24 @@ from pygame import mixer
 mixer.init()
 mixer.music.load("musiikki.mp3")
 mixer.music.play()
-kuollut = False
+kuolema = False
+def kuollut():
+        kuolema = True
+        if kuolema == True:
+                print("Peli päättyi!\n")
+                sleep(1)
+                uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
+                if uudelleen == "K":
+                        print("\n")
+                        sleep(1)
+                        print("Heräät varastosta.\n")
+                        mixer.music.rewind()
+                        sleep(1)
+                        main()
+                else:
+                        print("Heippa")
+                        quit()
+
 
 sleep(1)
 print("Kävelet illalla yksin tiellä..\n")
@@ -21,22 +38,14 @@ def main():
         sleep(1)
         kysymys1 = input("(A) Yritä kerätä se jaloilla / (B) Jatka huoneen tutkimista: ")
         if kysymys1 == ("A"):
-                print("Et saa nostettua puukkoa jaloilla, ja siitä tuleva kolina herättää toisessa huoneessa olevan nappaajasi huomion.\n")
+                print("\n")
                 sleep(1)
-                print("Nappaaja tulee ja viiltää sinulta kurkun auki.")
-                kuollut = True
-                if kuollut == True:
-                        print("Peli päättyi!")
-                        uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
-                        if uudelleen == "K":
-                                sleep(1)
-                                print("Heräät varastosta.\n")
-                                mixer.music.rewind()
-                                sleep(1)
-                                main()
-                        else:
-                                print("Heippa")
-                                quit()
+                print("Et saa nostettua puukkoa jaloilla, ja siitä tuleva kolina herättää toisessa huoneessa olevan nappaajasi huomion.\n")
+                sleep(3)
+                print("Nappaaja tulee ja viiltää sinulta kurkun auki. \n")
+                sleep(3)
+                kuollut()
+           
         elif kysymys1 ==("B"):
                 sleep(1)
                 print("\n")
@@ -71,8 +80,8 @@ def toinen():
         
         elif kysymys2 == "B":
                 print("Sieppaaja tulee huoneeseen, mutta et saa yllätettyä häntä, ja hän ampuu sinut.")
-                kuollut = True
-                if kuollut == True:
+                kuolema = True
+                if kuolema == True:
                         print("Peli päättyi!")
                         uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
                         if uudelleen == "K":
@@ -109,8 +118,8 @@ def kolmas():
         if kysymys3 == "A":
                 sleep(1)
                 print("Hänen astuessaan ovesta saat lyötyä häntä, mutta nappaaja ampuu sinut. \n")
-                kuollut = True
-                if kuollut == True:
+                kuolema = True
+                if kuolema == True:
                         print("Peli päättyi!")
                 uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
                 if uudelleen == "K":
@@ -129,8 +138,8 @@ def kolmas():
                 if kysymys4 == "A":
                         sleep(1)
                         print("Yhtäkkiä hän iskee veitsellä sinua")
-                        kuollut = True
-                        if kuollut == True:
+                        kuolema = True
+                        if kuolema == True:
                                 print("Peli päättyi!")
                         uudelleen = input("Haluatko yrittää uudelleen? (K/E): ")
                         if uudelleen == "K":
