@@ -10,5 +10,6 @@ def käännä(lause):
         else:
             käännös = käännös + kirjain
     return käännös
-
+    
 print(käännä(input("Syötä lause: ")))
+print("Syötetty lauseesi muuttui ylläolevaksi")
