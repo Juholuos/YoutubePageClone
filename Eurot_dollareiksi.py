@@ -5,20 +5,18 @@ peli = False
 def eurodollarilasku():
     eurokysyntä = int(input("Syötä Eurot: "))
     lopputulos = eurokysyntä * 1.01
-    f"{lopputulos:,}"
-    print ("\n%s euroa on %s dollaria." % (eurokysyntä, f"{lopputulos:,}"))
-
+    
+    print ("\n%s euroa on %s dollaria." % (f"{eurokysyntä:,}".replace(',', ' '), f"{lopputulos:,}".replace(',', ' ')))
 def europuntalasku():
     eurokysyntä = int(input("Syötä Eurot: "))
     lopputulos = eurokysyntä * 0.87
-    f"{lopputulos:,}"
-    print ("\n%s euroa on %s puntaa." % (eurokysyntä, f"{lopputulos:,}"))
+    
+    print ("\n%s euroa on %s puntaa." % (f"{eurokysyntä:,}".replace(',', ' '), f"{lopputulos:,}".replace(',', ' ')))
 
 def eurojenilasku():
     eurokysyntä = int(input("Syötä Eurot: "))
     lopputulos = eurokysyntä * 144
-    print ("\n%s euroa on %s japanin jeniä." % (eurokysyntä, f"{lopputulos:,}"))
-    f"{lopputulos:,}"
+    print ("\n%s euroa on %s japanin jeniä." % (f"{eurokysyntä:,}".replace(',', ' '), f"{lopputulos:,}".replace(',', ' ')))
 
 def valuutta_1_kysyntä():
     print("\n")
@@ -42,6 +40,5 @@ def valuutta_1_kysyntä():
         elif kysymys.lower() == ("e"):
             print("Selvä, heihei!")
         
-
-valuutta_1_kysyntä() 
+valuutta_1_kysyntä()
 
