@@ -2,6 +2,23 @@ from re import S
 from this import d
 peli = False
 
+def eurodollarilasku():
+    eurokysyntä = int(input("Syötä Eurot: "))
+    lopputulos = eurokysyntä * 1.01
+    f"{lopputulos:,}"
+    print ("\n%s euroa on %s dollaria." % (eurokysyntä, f"{lopputulos:,}"))
+
+def europuntalasku():
+    eurokysyntä = int(input("Syötä Eurot: "))
+    lopputulos = eurokysyntä * 0.87
+    f"{lopputulos:,}"
+    print ("\n%s euroa on %s puntaa." % (eurokysyntä, f"{lopputulos:,}"))
+
+def eurojenilasku():
+    eurokysyntä = int(input("Syötä Eurot: "))
+    lopputulos = eurokysyntä * 144
+    print ("\n%s euroa on %s japanin jeniä." % (eurokysyntä, f"{lopputulos:,}"))
+    f"{lopputulos:,}"
 
 def valuutta_1_kysyntä():
     print("\n")
@@ -9,18 +26,22 @@ def valuutta_1_kysyntä():
     while peli == True:
         eurot = input("\nHaluatko muuttaa: (A)EUR-USD, (B)EUR-GBD, (C)EUR-JPY?: ")
         if eurot == "A":
-            eurokysyntä = int(input("Syötä Eurot: "))
-            lopputulos = eurokysyntä * 1.01
-            print ("\n%s euroa on %s dollaria." % (eurokysyntä, lopputulos))
+            eurodollarilasku()
+            peli = False
         if eurot == "B":
-            eurokysyntä = int(input("Syötä Eurot: "))
-            lopputulos = eurokysyntä * 0.87
-            print ("\n%s euroa on %s puntaa." % (eurokysyntä, lopputulos))
+            europuntalasku()
+            peli = False
         if eurot == "C":
-            eurokysyntä = int(input("Syötä Eurot: "))
-            lopputulos = eurokysyntä * 144
-            print ("\n%s euroa on %s japanin jeniä." % (eurokysyntä, lopputulos))
+            eurojenilasku()
+            peli = False
 
+        kysymys = input("\nHaluatko pelata uudelleen? (K/E): ")
+        if kysymys.lower() == ("k"):
+            print("Selvä!")
+            peli = True
+        elif kysymys.lower() == ("e"):
+            print("Selvä, heihei!")
+        
 
 valuutta_1_kysyntä() 
 
