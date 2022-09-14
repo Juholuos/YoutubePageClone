@@ -1,7 +1,15 @@
-PituudenKysyntä = float(input("Syötä pituus (cm): "))
-PainonKysyntä = float(input("Syötä paino (kg): "))
+from time import sleep
+
+PituudenKysyntä = (int(input("Syötä pituus (cm): ")))
+PainonKysyntä = (int(input("Syötä paino (kg): ")))
+
+
 
 painoindeksi = (PainonKysyntä / ((PituudenKysyntä / 100) * (PituudenKysyntä/100 )))
+
+
+print("\nPainoindeksisi on " +(str( painoindeksi)))
+
 if (painoindeksi) < 15:
     print("Olet sairaalloisen alipainoinen")
 elif 15 > (painoindeksi) > 17:
@@ -17,6 +25,6 @@ elif 30 >(painoindeksi) > 35:
 elif 35 > (painoindeksi) > 40:
     print("Sinulla on vaikea ylipaino")
 elif (painoindeksi) > 40:
-    print("Sairaalloinen ylipaino")
+    print("\nSinulla on sairaalloinen ylipaino")
 
-print(painoindeksi)
+
