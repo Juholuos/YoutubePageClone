@@ -1,11 +1,9 @@
-
-def main():
+salasana = True
+while salasana == True:
     salainensalasana = open("salainensalasana.txt")
     salasana = input("Syötä salasana: ")
-    if salasana == salainensalasana.read():
+    if(salasana in salainensalasana.read()):
         print("Pääsy hyväksytty!")
     else:
         print("Pääsy hylätty!")
-        main()
-main()
     
