@@ -1,10 +1,9 @@
-peli = True
-while peli == True:
-    salasanatiedosto = open("salainensalasana.txt")
-    salainensalasana = salasanatiedosto.read()
-    kirjoitettusalasana=input("Syötä salasanasi: ")
-    if (kirjoitettusalasana in salasanatiedosto()):
+salasana = True
+while salasana == True:
+    salainensalasana = open("salainensalasana.txt")
+    salasana = input("Syötä salasana: ")
+    if(salasana in salainensalasana.read()):
         print("Pääsy hyväksytty!")
-        peli = False
     else:
         print("Pääsy hylätty!")
+    
