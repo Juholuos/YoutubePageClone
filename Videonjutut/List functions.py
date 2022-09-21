@@ -3,6 +3,7 @@ Kaverit = ["Joona", "Matias", "Eljas"]
 
 #extend
 Kaverit.extend(Onnen_numerot)
+print(Kaverit)
 
 #kahden listan yhdistäminen (lista.extend(lista2))
 Mopomerkit = ["Yamaha1", "Suzuki", "Fantic", "Honda"]
