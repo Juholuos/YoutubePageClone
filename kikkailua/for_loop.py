@@ -38,4 +38,7 @@ for y in parhaat_mopomerkit:
     for x in värit:
         print(x, y)
 
-        
+
+viesti = "Moi mitä kuuluu?"
+viesti2 = viesti.split()
+
