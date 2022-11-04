@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- HTML:än kanssa voi käyttää CSS nopeuttaakseen sivujen muokkausta. -->
+<!-- On kolme eri tapaa yhdistää CSS-koodi HTML-tiedostoon. Näitä ovat mm.-->
+
+<!-- Inline CSS-->
+<!--CSS liitetään HTML:lään rivin sisällä-->
+    <!--
+    <h1 style="color:blue;">A Blue Heading</h1>
+
+    <p style="color:red;">A red paragraph.</p>
+    -->
+
+<!--Internal CSS-->
+<!--CSS liitetään HTML:lään tiedoston sisällä, headin välissä stylen sisällä.-->
+    <!--
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+    </style>
+    </head>
+    <body>
+
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+
+    </body>
+    </html>
+    -->
+
+<!--External CSS-->
+<!--CSS liitetään HTML:lään erillisellä tiedostolla, joka linkataan htmllään..-->
+<!-- Linkkaus tapahtuu <link rel="stylesheet" href="CSS-tiedosto" -->
+    <!--
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+
+    </body>
+    </html>
+    -->
+
+    <!-- "CSS-tiedosto" voisi olla esim.
+    
+    body {
+        background-color: powderblue;
+      }
+      h1 {
+        color: blue;
+      }
+      p {
+        color: red;
+      }
+      
+    -->
