@@ -10,17 +10,92 @@
 <!--1d-->
 <p>Olin tänään koulussa.</p>
 
-<!--1d-->
+<!--1e-->
 <a href="https://youtube.com/">Linkki youtubeen</a>
+<br>
+<br>
+<br>
+
+<!--1f (Jatkuu myös 2f)--> 
+<style>
+  .amazon {
+    color:rgb(0, 163, 163)
+  }
+
+  .amazon:hover{
+    color:orange;
+  }
+  
+  .Nimi {
+    font-weight:bold;
+    font-size:25px;
+    transition: 0.2s;
+  }
 
 
-<a href="https://amazon.com/">Takaisin Amazoniin</a>
+  .hinta {
+    color: rgb(0,118,0);
+    font-weight:bold;
+  }
 
-<p>Nike black Running Shoes</p>
 
-<p>$39 - in stock.</p>
+  .Kori {
+    width: 105px;
+    height: 30px;
+    color:black;
+    background-color: rgb(255,216,20);
+    border:none;
+    border-radius:20px;
+    cursor: pointer;
+  }
 
-<p>Free delivery tomorrow.</p>
+  .kori:hover{
+    background-color: rgb(240, 201, 5);
+  }
 
-<button>Add to Cart</button>
-<button>Buy now</button>
+  .kori:active{
+    opacity: 0.6;
+  }
+
+  .osta{
+    width: 105px;
+    height: 30px;
+    color:black;
+    background-color: rgb(255,164,28);
+    border:none;
+    border-radius:20px;
+    cursor: pointer;
+  }
+
+
+  .osta:hover{
+    background-color: rgb(240,149, 13);
+  }
+
+  .osta:active{
+    opacity: 0.6;
+  }
+</style>
+
+<a href="https://amazon.com/"class="amazon">Takaisin Amazoniin</a>
+
+<p class="Nimi">
+Nike black Running Shoes
+</p>
+
+
+<p class="Hinta">
+$39 - in stock.
+</p>
+
+<p class="toimitus">
+Free delivery tomorrow.
+</p>
+
+<button class="Kori">
+  Add to Cart
+</button>
+
+<button class="Osta">
+  Buy now
+</button>
