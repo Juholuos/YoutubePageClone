@@ -1,0 +1,57 @@
+.amazon {
+  color:rgb(0, 163, 163)
+}
+
+.amazon:hover{
+  color:orange;
+}
+
+.Nimi {
+  font-weight:bold;
+  font-size:25px;
+  transition: 0.2s;
+}
+
+
+.hinta {
+  color: rgb(0,118,0);
+  font-weight:bold;
+}
+
+
+.Kori {
+  width: 105px;
+  height: 30px;
+  color:black;
+  background-color: rgb(255,216,20);
+  border:none;
+  border-radius:20px;
+  cursor: pointer;
+}
+
+.kori:hover{
+  background-color: rgb(240, 201, 5);
+}
+
+.kori:active{
+  opacity: 0.6;
+}
+
+.osta{
+  width: 105px;
+  height: 30px;
+  color:black;
+  background-color: rgb(255,164,28);
+  border:none;
+  border-radius:20px;
+  cursor: pointer;
+}
+
+
+.osta:hover{
+  background-color: rgb(240,149, 13);
+}
+
+.osta:active{
+  opacity: 0.6;
+}
