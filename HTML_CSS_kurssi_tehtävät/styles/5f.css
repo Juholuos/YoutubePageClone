@@ -1,0 +1,30 @@
+p{
+  font-family:arial;
+}
+
+.hinta{
+font-size: 30px;
+margin-bottom: 1px;
+line-height: 25px;
+}
+
+.usd{
+margin-left:10px;
+color:rgb(83, 83, 83);
+margin-bottom: 1px;
+}
+
+.nousu{
+margin-top: 1px;
+color:green;
+margin-bottom: 5px;
+}
+
+.miinus{
+color:red;
+}
+
+.afterr{
+color:rgb(83, 83, 83);
+margin-top: 4px;
+}
