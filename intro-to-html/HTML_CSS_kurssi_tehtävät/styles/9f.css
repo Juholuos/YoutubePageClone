@@ -1,0 +1,40 @@
+.laatikko{
+  border:1px solid lightgray;
+  width:170px;
+  height: 258px;
+  display:inline-block;
+  margin-right:10px;
+}
+.kitten{
+  width:170px;
+  height:150px;
+  object-fit: cover;
+  margin-bottom:0px;
+}
+
+.name{
+  margin-top:7px;
+  margin-bottom:5px;
+  padding-left:5px;
+  font-weight:bold;
+  font-family:arial;
+}
+
+.friends{
+  margin-top:7px;
+  padding-left:5px;
+  font-family:arial;
+  color: gray;
+  margin-bottom:12px;
+  font-size: 14px;
+}
+
+.add{
+  background-color: rgb(66, 66, 253);
+  border:none;
+  padding: 8px 13px 8px 13px;
+  margin-left: 5px;
+  color:white;
+  margin-top:0px;
+  font-family:arial;
+}

@@ -1,0 +1,138 @@
+
+.kitten1{
+  width:200px;
+  border-radius: 10px;
+}
+
+.kitten2{
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  object-position:center;
+}
+
+.kitten3{
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:100px;
+}
+
+.Search-box{
+  border-radius: 10px;
+  border:solid 1px;
+  border-color: rgb(168, 168, 168);
+  padding-left: 10px;
+  padding-right:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family:arial;
+  font-size: 20px;
+}
+
+.google{
+  width:200px;
+  display:block;
+  margin-left:135px;
+  margin-bottom: 15px;
+  
+}
+
+
+.Search-box2 {
+  padding-left: 15px;
+  padding-right:15px;
+  padding-top: 15px;
+  padding-bottom:15px;
+  width:500px;
+  font-family:arial;
+  font-size: 15px;
+  border-radius:30px;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+}
+
+.text1{
+  font-family: arial;
+  color: gray;
+  margin-bottom:9px;
+}
+
+.text2{
+  font-family: arial;
+  color: gray;
+}
+
+.text-box7f {
+  border: solid 1px;
+  border-radius: 5px;
+  width:400px;
+  height:30px;
+  padding-left:15px;
+  padding-right:15px;
+  font-size:20px;
+  margin-top:0;
+}
+
+.agree {
+  background-color: rgb(94, 94, 255);
+  color:white;
+  border:none;
+  padding-left:80px;
+  padding-right:80px;
+  padding-top:13px;
+  padding-bottom:13px;
+  border-radius: 25px;
+  width:430px;
+  cursor:pointer;
+}
+
+.agree:active {
+  opacity:0.8;
+}
+
+.kittenn{
+  width:50px;
+  height:50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 45px;
+  vertical-align: middle;
+  margin-right:0;
+}
+
+.twitter-box{
+  width:250px;
+  height: 30px;
+  border:none;
+  font-family: Arial;
+  font-size:17px;
+  padding-left:10px;
+  margin-left:0;
+}
+
+.tweet{
+  background-color: rgb(29 161 242);
+  color:white;
+  border:none;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:8px;
+  padding-bottom:8px;
+  font-weight:bold;
+  font-size:15px;
+  border-radius:20px;
+  vertical-align: center;
+
+}
+
+.twitter-boxx {
+  border:solid 1px lightgray;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-right:15px;
+  padding-bottom: 10px;
+
+  width:395px;
+}

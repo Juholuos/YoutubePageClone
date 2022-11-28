@@ -1,0 +1,28 @@
+.name {
+  padding: 10px;
+  border:solid rgb(205, 205, 205) 1px;
+  border-radius:10px;
+}
+
+.email{
+  width:365px;
+  display:block;
+  margin-top:9px;
+  padding: 10px;
+  border:solid rgb(205, 205, 205) 1px;
+  border-radius:10px;
+}
+
+.sign {
+  background-color: rgb(76, 76, 252);
+  color:white;
+  font-family:arial;
+  font-size: 20px;
+  width:385px;
+  display:block;
+  margin-top:9px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: none;
+  border-radius:10px;
+}

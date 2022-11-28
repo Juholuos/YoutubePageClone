@@ -1,0 +1,17 @@
+
+.name,
+.email{
+  display:block;
+  margin-top: 5px;
+}
+
+.survey{
+  width:210px;
+  font-size: 16px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.yes{
+  vertical-align:middle;
+}
