@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+
+
+  <head>
+    <style>
+
+      .grid-container{
+        display:grid;
+        grid-template-columns: 200px 75px;
+      }
+
+      .lightblue {
+        background-color: lightblue;
+      }
+
+      .lightpink {
+        background-color: lightpink;
+      }
+/*-------------------------------------------------------------------*/
+
+      .grid-container2{
+        display:grid;
+        grid-template-columns: 50px 1fr 75px;
+      }
+
+      .col1, .col3 {
+        background-color: lightblue;
+      }
+
+      .col2{
+        background-color: lightpink;
+      }
+/*-------------------------------------------------------------------*/
+
+      .grid-container3{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap:10px;
+      }
+      .coll1, .coll2, .coll3, .coll4 {
+        background-color: lightpink;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+
+    <div class="grid-container">
+      <div class="lightblue">200px</div>
+      <div class="lightpink">75px</div>
+    </div>
+
+    <br>
+
+    <div class="grid-container2">
+      <div class="col1">col1</div>
+      <div class="col2">col2</div>
+      <div class="col3">col3</div>
+    </div>
+
+    <br> 
+
+    <div class="grid-container3">
+      <div class="coll1"> col1</div>
+      <div class="coll2"> col2</div>
+      <div class="coll3"> col3</div>
+      <div class="coll4"> col4</div>
+
+      <div class="coll1"> col1</div>
+      <div class="coll2"> col2</div>
+      <div class="coll3"> col3</div>
+      <div class="coll4"> col4</div>
+
+    </div>
+  </body>
+
+</html>
