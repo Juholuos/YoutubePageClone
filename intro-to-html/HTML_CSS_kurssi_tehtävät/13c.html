@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width:400px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:15px;
+        padding-right:15px;
+        border: 1px solid rgb(216, 216, 216);
+        border-radius:4px;
+        font-family:arial;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+      }
+
+      .inbox{
+        margin-bottom: 25px;
+        color:rgb(133, 133, 133);
+        font-size: 14px;
+        font-family:arial;
+      }
+
+      .email {
+        display:flex;
+        align-items: center;
+        margin-bottom:20px;
+      }
+
+      .profile-picture{
+        width:50px;
+        height:50px;
+        object-fit:cover;
+        border-radius:25px;
+        margin-right: 9px;
+        margin-left: 0px;
+      }
+
+      .email-header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .sender-name{
+        font-weight:bold;
+        font-size:17px;
+      }
+
+      .send-time{
+        color:rgb(133, 133, 133);
+        font-size: 14px;
+        margin-right: 0px;
+        text-decoration: none;
+      }
+
+      .subject{
+        font-size: 16px;
+        font-weight:bold;
+        margin-top:5px;
+      }
+
+      .message{
+        color: rgb(133, 133, 133);
+        margin-top:4px;
+        font-size: 15px;
+      }
+
+      .email-content{
+        width:400px;
+      }
+    
+    </style>
+  </head>
+
+  <body> 
+
+    <div class="container">
+      <div class="inbox"> ALL INBOXES </div>
+      <div class="email">
+        <div class="sender-picture-container">
+          <img class="profile-picture" src="thumbnails/kitten.jpg">
+        </div>
+        <div class="email-content">
+          <div class="email-header">
+            <div class="sender-name">Chewy Promotions</div>
+            <div class="send-time">4:58 PM</div>
+          </div>
+          <div class="subject">
+            Biggest sales of the year!
+          </div>
+          <div class="message">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

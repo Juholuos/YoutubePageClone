@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <style>
+      p {
+        margin-bottom:0;
+        margin-top:0;
+        color:white;
+      }
+
+      .flexbox{
+       display:flex;
+       height:60px;
+      }
+
+      .lightpink{
+        width:100px;
+        height:50px;
+        background-color: lightpink;
+
+      }
+
+      .flexbox2{
+        background-color: lightblue;
+        width:200px;
+        height:50px;
+      }
+
+      .row1{
+        margin-bottom:0;
+      }
+
+      .flexbox3{
+        display:flex;
+        justify-content: space-between;
+      }
+
+      .row2a {
+        background-color: black;
+      }
+
+      .row2b {
+        background-color: black;
+      }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="flexbox">
+      <div class="lightpink"> </div>
+      <div class="flexbox2">
+        <div class="row1">row1</div>
+        <div class="flexbox3">
+          <p class="row2a">row2</p>
+          <p class="row2b">row 2</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

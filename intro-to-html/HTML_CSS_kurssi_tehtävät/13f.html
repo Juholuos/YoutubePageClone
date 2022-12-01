@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <style>
+      div{
+        font-family:arial;
+      }
+
+      .container{
+        width:400px;
+        display:flex;
+      }
+
+      .tweet-header{
+        display:flex;
+
+      }
+
+      .tweet-author{
+        margin-right:8px;
+      }
+
+      .tweet-author-handle{
+        color:gray
+      }
+
+      .picture-container{
+        margin-right:10px;
+      }
+
+      .profile-picture{
+        width:60px;
+        height:60px;
+        object-fit: cover;
+        border-radius:30px;
+      }
+
+      .tweet-content{
+        width:400px;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="picture-container">
+        <img class="profile-picture" src="thumbnails/kitten.jpg">
+      </div>
+      <div class="tweet-column">
+        <div class="tweet-header">
+          <div class="tweet-author">supersimple.dev</div>
+          <div class="tweet-author-handle">@SuperSimpleDev</div>
+        </div>
+        <div class="tweet-content">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-column"></div>
+          <div class="video-title">
+            Backend web development - a complete overview (2021)
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
