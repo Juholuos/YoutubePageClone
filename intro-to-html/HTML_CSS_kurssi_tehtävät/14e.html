@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>14e</title>
+
+    <style>
+      .header{
+        position:fixed;
+        display:flex;
+        padding-left:40px;
+        align-items: center;
+        left:0px;
+        right:0px;
+        top:0px;
+        margin-top: 9px;
+      }
+
+      .img-container{
+        height:40px;
+      }
+
+      .img{
+        height:40px;
+        width:40px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+
+      .name-container {
+        margin-left: 9px;
+        font-family:arial;
+        font-weight:bold;
+        font-size:15px;
+        flex: 1;
+      }
+
+      .buttons-container {
+        display:flex;
+        margin-right:60px;
+        
+        font-family:arial;
+      }
+
+      .add-friend {
+        margin-right:8px;
+        padding-top: 7px;
+        padding-right: 10px;
+        padding-bottom: 7px;
+        padding-left:10px;
+
+        background-color: rgb(60, 60, 255);
+        color:white;
+
+        border:none;
+        border-radius:5px;
+        font-weight:bold;
+      }
+
+      .message {
+        padding-top: 7px;
+        padding-right: 10px;
+        padding-bottom: 7px;
+        padding-left:10px;
+
+        background-color: rgb(193, 193, 193);
+        color:black;
+
+        border:none;
+        border-radius:5px;
+        font-weight:bold;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="img-container">
+        <img class="img" src="thumbnails/kitten.jpg">
+      </div>
+
+      <div class="name-container">
+        <div> Oliver Cat</div>
+      </div>
+
+      <div class="buttons-container">
+        <button class="add-friend"> Add Friend </button>
+        <button class="message">Message</button>
+      </div>
+
+    </div>
+  </body>
+
+</html>

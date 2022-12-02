@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>14f</title>
+    <style>
+      body{
+        height:3000px;
+        font-family:arial;
+      }
+
+      .sidebar{
+        display:flex;
+        position:fixed;
+        background-color: gray;
+        top:0;
+        left:0;
+        bottom:0;
+        width:200px;
+      }
+
+      .sidebar1 {
+        display:flex;
+        flex-direction: column;
+        row-gap: 8px;
+        background-color: rgb(33, 33, 33);
+        padding: 10px;
+        padding-top:15px;
+        align-items: center;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius:25px;
+      }
+
+      .sidebar2 {
+        width:150px;
+        position: fixed;
+        left:70px;
+        top:0px;
+        bottom:0px;
+        background-color: rgb(55, 55, 55);
+        padding-left: 15px;
+        padding-top:15px;
+        padding-right:15px;
+      }
+      
+      .header {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .name {
+        color:white;
+        font-size:15px;
+      }
+
+      .create-new{
+        color:gray;
+        font-size: 22px;
+      }
+
+      .channel1 {
+        color: gray;
+        margin-bottom: 10px;
+      } 
+    
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar1">
+        <img class="kuva1" src="thumbnails/kitten.jpg">
+        <img class="kuva2" src="thumbnails/kitten2.jpg">
+        <img class="kuva3" src="thumbnails/kitten3.jpg">
+      </div>
+      <div class="sidebar2">
+        <div class="header">
+          <div class="name">INFO</div>
+          <div class="create-new">+</div>
+        </div>
+        <div class="channel1"> # new-videos </div>
+        <div class="channel1"> # updates </div>
+        <div class="channel1"> # faq </div>
+      
+      
+      
+    </div>
+  </body>
+
+</html>

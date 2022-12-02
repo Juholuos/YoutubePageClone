@@ -13,7 +13,7 @@
 
       .tweet-header{
         display:flex;
-
+        margin-bottom:5px;
       }
 
       .tweet-author{
@@ -37,9 +37,39 @@
 
       .tweet-content{
         width:400px;
+        margin-bottom:12px;
       }
 
+      .video-preview{
+        display:flex;
+        align-items: center;
+        border: 1px solid rgb(200,200,200);
+        border-radius:15px;
+        overflow:hidden;
+        width:350px;
+      }
 
+      .thumbnail-column{
+        width:100px;
+        height:100px;
+        background-color: rgb(220,220,220);
+        margin-right:10px;
+      }
+
+      .video-info-column {
+        flex:1;
+      }
+
+      .video-website {
+        color: rgb(111, 111, 111);
+        margin-bottom:3px;
+      }
+
+      .video-title {
+        line-height:22px;
+      }
+
+      
     </style>
   </head>
 
@@ -59,8 +89,11 @@
         </div>
         <div class="video-preview">
           <div class="thumbnail-column"></div>
-          <div class="video-title">
-            Backend web development - a complete overview (2021)
+          <div class="video-info-column">
+            <div class="video-website">youtube.com</div>
+            <div class="video-title">
+              Backend web development - a complete overview (2021)
+            </div>
           </div>
         </div>
       </div>

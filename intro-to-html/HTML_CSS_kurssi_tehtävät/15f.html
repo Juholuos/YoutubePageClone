@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        height:3000px;
+      }
+
+      .image-container{
+        position:relative;
+        display:inline-block;
+      }
+
+
+      .clothing{
+       width:500px;
+       height:500px;
+       object-fit: cover;
+      }
+
+
+      .price {
+        position:absolute;
+        right: -40px;
+        top:0px;
+        background-color: black;
+        color:white;
+        padding: 5px 10px 5px 10px;
+        font-size:25px;
+      }
+
+      .bottom-overlay{
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 140px;
+        background-color: rgba(255,255,255, 0.8);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .add-to-cart-button{
+        padding:8px;
+        font-family:arial;
+        font-size: 20px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="image-container">
+      <img class="clothing" src="thumbnails/Hoodie.webp">
+      <div class="price">20% OFF</div>
+      <div class="bottom-overlay">
+        <button class="add-to-cart-button">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
